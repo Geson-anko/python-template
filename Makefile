@@ -20,6 +20,6 @@ test: ## Run not slow tests
 	poetry run pytest -v
 
 test-full: ## Run all tests and coverage.
-	poetry run pytest -v --slow --cov=src
+	poetry run pytest -v --slow
 
-run: format, test-full
+run: format test-full
